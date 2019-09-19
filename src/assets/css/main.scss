@@ -1,0 +1,210 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    padding:0;
+    margin:0;
+  }
+  
+  /* 快速浮动 */
+  
+  .pull-right {
+    float: right !important;
+  }
+  
+  .pull-left {
+    float: left !important;
+  }
+  
+  /* 清除浮动 */
+  
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: " ";
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /* 让内容块居中 */
+  
+  .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* 显示或隐藏内容 */
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .show {
+    display: block !important;
+  }
+  
+  /* 文本溢出包含元素时显示省略符号来代表被修剪的文本 */
+  
+  .text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  //文本不可选中
+  .text-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+  }
+  
+  //iconfont
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+  
+  // 三级联最小宽度和默认input宽度保持一致
+  .el-cascader-menu {
+    min-width: 214px;
+  }
+  
+  //分页样式
+  .el-pager li {
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  
+  .el-pagination {
+    margin-top: 30px;
+    float: right !important;
+  }
+  
+  .el-pagination.is-background .btn-next,
+  .el-pagination.is-background .btn-prev,
+  .el-pagination.is-background .el-pager li {
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    margin-left: 1px;
+  }
+  
+  //表格
+  .el-table thead th,
+  .el-table thead tr {
+    text-align: center;
+    background-color: #FAFAFA;
+    padding: 3px 0;
+  }
+  
+  .el-table--small td,
+  .el-table--small th {
+    padding: 3px 0;
+  }
+  
+  //面包屑
+  .el-breadcrumb {
+    line-height: 50px;
+    padding-left: 20px;
+  }
+  
+  // .el-dialog__wrapper {
+  //   .el-dialog {
+  //     width: 94%;
+  //   }
+  // }
+  
+  //模态框头部
+  .el-dialog__header {
+    padding: 10px 20px;
+    background: #eeeeee;
+  }
+  
+  .el-dialog__title {
+    font-size: 16px;
+  }
+  
+  .el-dialog__headerbtn {
+    top: 13px;
+  }
+  
+  .el-message {
+    -webkit-transform: translate(-50%);
+    // transform: translate(-50%)
+  }
+  
+  .el-radio__input.is-checked .el-radio__inner:after {
+    // transform: translate(-50%,-50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .el-radio__inner:after {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+  }
+  
+  .el-checkbox__input.is-checked .el-checkbox__inner:after {
+    -webkit-transform: rotate(45deg) scaleY(1);
+  }
+  
+  //滚动条
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e4e4e4;
+    border-radius: 4px;
+  }
+  
+  .el-select__tags {
+    -webkit-transform: translateY(-50%);
+  }
+  
+  // 必填标注
+  .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+    color: red;
+  }
+  
+  // 带搜索的输入框
+  .self-input__suffix {
+    span {
+      -webkit-transform: translate(-77px) !important;
+    }
+  }
+  
+  @font-face {
+    /* font-properties */
+    font-family: SimSun;
+    src: url("/static/images/bigscreen/SimSun.TTF") format('truetype');
+  }
+  
+  @page {
+    size: auto;
+    /* auto is the initial value */
+    margin: 0mm;
+    /* this affects the margin in the printer settings */
+  }
+  
+  .el-tree-node__expand-icon {
+    -webkit-transform: rotate(0);
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+  }
+  
+  .el-tree-node__expand-icon.expanded {
+    -webkit-transform: rotate(90deg);
+  }
+  
